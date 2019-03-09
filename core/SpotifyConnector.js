@@ -39,7 +39,7 @@ module.exports = class SpotifyConnector {
   
   playThis(payload) {
 	let url = payload.url;  
-	let uri = replaceall("/", ":", url.replace("https://open.spotify.com", "spotify"));
+	let uri = replaceall("/", ":", url.replace("https:\/\/open.spotify.com", "spotify"));
 
 	
     if (moment().isBefore(this.tokenExpiresAt)) {
